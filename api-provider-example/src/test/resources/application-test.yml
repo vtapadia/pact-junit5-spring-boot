@@ -1,0 +1,5 @@
+pactbroker:
+  host: vtapadia.pact.dius.com.au
+  scheme: https
+  auth:
+    token: ${pact.broker.token}
