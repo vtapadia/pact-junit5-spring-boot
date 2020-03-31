@@ -1,5 +1,6 @@
 package com.github.vtapadia.examples.cdc.provider;
 
+import au.com.dius.pact.provider.junit.IgnoreNoPactsToVerify;
 import au.com.dius.pact.provider.junit.Provider;
 import au.com.dius.pact.provider.junit.State;
 import au.com.dius.pact.provider.junit.loader.PactBroker;
@@ -24,6 +25,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @ActiveProfiles("test")
 @ExtendWith(SpringExtension.class)
+@IgnoreNoPactsToVerify
 public class PactVerificationTest {
     @LocalServerPort
     private int port;
