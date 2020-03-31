@@ -40,6 +40,12 @@
             <artifactId>pact-jvm-consumer-junit5</artifactId>
             <version>4.0.8</version>
         </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.6</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
